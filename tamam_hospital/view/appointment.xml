@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    # form view
+    <record id="hospital_appointments_form" model="ir.ui.view">
+        <field name="name">hospital.appointments.form</field>
+        <field name="model">hospital.appointments</field>
+        <field name="arch" type="xml">
+            <form string="Appointments">
+                <header>
+                    <button name="print_reports" type="object" string="Print" class="oe_highlight"/>
+                    <button name="delete_lines" type="object" string="Delete" class="oe_highlight"/>
+                    <button name="action_confirm" type="object" string="Confirm" class="oe_highlight" states="draft"/>
+                    <button name="action_notify" type="object" string="Notify" class="oe_highlight" states="draft"/>
+                    <button name="action_done" type="object" string="Done" class="oe_highlight"
+                    attrs="{'invisible': [('state','!=', 'confirm')]}"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="patient_id"/>
+                            <field name="partner_id"/>
+                            <field name="order_id"/>
+                            <field name="appointment_date_end"/>
+                            <field name="notes"/>
+                        </group>
+                        <group>
+                            <field name="name"/>
+                            <field name="amount"/>
+                            <field name="appointment_date" options='{"datepicker": {"daysOfWeekDisabled": [0, 6]}}'/>
+                            <field name="doctor_ids" widget="many2many_tags"/>
+                            <field name="product_id"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Doctor Prescription">
+                           <field name="appointments_lines">
+                               <tree editable="bottom">
+                                   <field name="sequence" widget="handle"/>
+                                   <field name="product_id"/>
+                                   <field name="product_qty"/>
+                                   <field name="appointments_id" invisible="1"/>
+                               </tree>
+                               <form>
+                                   <group>
+                                       <group>
+                                           <field name="product_id"/>
+                                       </group>
+                                       <group>
+                                           <field name="product_qty"/>
+                                       </group>
+                                   </group>
+                               </form>
+                           </field>
+                        </page>
+                        <page string="Pharmacy">
+                             <field name="pharmacy_note"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    # tree view
+    <record id="hospital_appointments_tree" model="ir.ui.view">
+        <field name="name">hospital.appointments.tree</field>
+        <field name="model">hospital.appointments</field>
+        <field name="arch" type="xml">
+            <tree banner_route="/tamam_hospital/appointments" decoration-info="state == 'draft'" decoration-muted="state == 'cancel'"
+                  decoration-success="state == 'done'" decoration-danger="state == 'confirm'">
+                <field name="patient_id"/>
+                <field name="name"/>
+                <field name="patient_id"/>
+                <field name="patient_age" avg="Average Of Ages"/>
+                <field name="appointment_date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+
+    #graph view
+    <record id="appointments_graph" model="ir.ui.view">
+        <field name="name">appointments graph view</field>
+        <field name="model">hospital.appointments</field>
+        <field name="arch" type="xml">
+            <graph string="Appointments Graph" type="pie">
+                <field name="patient_id"/>
+                <field name="amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    # calender view
+    <record id="appointments_calendar" model="ir.ui.view">
+        <field name="name">hospital appointments calendar</field>
+        <field name="model">hospital.appointments</field>
+        <field name="arch" type="xml">
+            <calendar string="Appointment Calendar" date_start="appointment_date" color="patient_id" mode="month" quick_add="False">
+                <field name="name"/>
+                <field name="patient_id"/>
+            </calendar>
+        </field>
+    </record>
+
+    # pivot view
+    <record id="appointments_pivot" model="ir.ui.view">
+        <field name="name">hospital.appointments.pivot</field>
+        <field name="model">hospital.appointments</field>
+        <field name="arch" type="xml">
+            <pivot string="Appointment">
+                <field name="doctor_id" type="row"/>
+                <field name="appointment_date" type="col" interval="day"/>
+            </pivot>
+        </field>
+    </record>
+
+    # timeline view
+<!--    <record id="appointments_timeline" model="ir.ui.view">-->
+<!--        <field name="model">hospital.appointments</field>-->
+<!--        <field name="type">timeline</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <timeline date_start="appointment_date"-->
+<!--                      date_stop="appointment_date_end"-->
+<!--                      default_group_by="doctor_id"-->
+<!--                      event_open_popup="true"-->
+<!--                      colors="#ec7063: state == 'draft'; #2ecb71: state == 'done';">-->
+<!--                <field name="patient_id"/>-->
+<!--                <field name="name"/>-->
+<!--                <templates>-->
+<!--                    <t t-name="timeline-item">-->
+<!--                        <div class="o_project_timeline_item">-->
+<!--                            <span name="display_name">-->
+<!--                                <t t-esc="record.display_name"/>-->
+<!--                            </span>-->
+<!--                            <small name="planned_hours" class="text-muted ml4">-->
+<!--                                <t t-esc="record.notes"/>-->
+<!--                            </small>-->
+<!--                        </div>-->
+<!--                    </t>-->
+<!--                </templates>-->
+<!--            </timeline>-->
+<!--        </field>-->
+<!--    </record>-->
+
+    # action
+    <record id="hospital_appointments_action" model="ir.actions.act_window">
+        <field name="name">Appointments</field>
+        <field name="res_model">hospital.appointments</field>
+        <field name="view_mode">tree,form,calendar,graph,pivot</field>
+    </record>
+
+    # appointment menu
+    <menuitem id="appointments_tamam" name="Appointments" parent="tamam_hospital" action="hospital_appointments_action" sequence="3"/>
+
+</odoo>

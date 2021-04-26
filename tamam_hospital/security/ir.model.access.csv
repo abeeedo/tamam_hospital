@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hospital_patients,access.hospital.patients,model_hospital_patients,,1,1,1,1
+access_hospital_doctors,access.hospital.doctors,model_hospital_doctors,,1,1,1,1
+access_hospital_labs,access.hospital.labs,model_hospital_labs,,1,1,1,1
+access_hospital_appointments,access.hospital.appointments,model_hospital_appointments,,1,1,1,1
+access_hospital_appointments_lines,access.hospital.appointments.lines,model_hospital_appointments_lines,,1,1,1,1
+wizard_tamam_hospital,wizard.tamam.hospital,model_appointments_wizard,,1,1,1,1

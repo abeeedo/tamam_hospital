@@ -1,0 +1,1034 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tamam_hospital
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-23 02:48+0000\n"
+"PO-Revision-Date: 2021-04-23 02:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tamam_hospital
+#: model:mail.template,body_html:tamam_hospital.patients_cards_email_template
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                        Dear ${object.patient_name}\n"
+"                        <br/><br/>\n"
+"                        Here is your patient card with reference ${object.name_seq}\n"
+"                        <br/><br/>\n"
+"                        Age : ${object.patient_age}\n"
+"                        Contact Number : ${object.name}\n"
+"                        <br/><br/>\n"
+"                        If you have queries feel free to ask.\n"
+"                    </p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.report_patients_views
+msgid "<strong>Age: </strong>"
+msgstr "العمر"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.appointments_report
+msgid "<strong>Date </strong>"
+msgstr "تاريخ"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.report_patients_views
+msgid "<strong>Group: </strong>"
+msgstr "المجموعه"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.appointments_report
+msgid "<strong>Name </strong>"
+msgstr "الاسم"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.report_patients_views
+msgid "<strong>Name: </strong>"
+msgstr "الاسم"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.appointments_report
+msgid "<strong>Notes </strong>"
+msgstr "ملاحظة"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.sale_report_inherit
+msgid "<strong>Test Report Customization:</strong>"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_needaction
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__activity_ids
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__activity_ids
+msgid "Activities"
+msgstr "انشطة"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__activity_exception_decoration
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__activity_state
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__activity_type_icon
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__patient_age
+msgid "Age"
+msgstr "العمر"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_kanban
+msgid "Age :"
+msgstr "العمر"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__age_group
+msgid "Age Group"
+msgstr "المجموعة"
+
+#. module: tamam_hospital
+#: model:ir.actions.report,name:tamam_hospital.report_appointments
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.appointments_pivot
+msgid "Appointment"
+msgstr "المواعيد"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.appointments_calendar
+msgid "Appointment Calendar"
+msgstr "مواعيد التقويم"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_appointments_wizard__appointment_date
+msgid "Appointment Date"
+msgstr "تاريخ الموعد"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__name
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__appointments_id
+msgid "Appointment ID"
+msgstr "معرف المواعيد"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__appointments_lines
+msgid "Appointment Lines"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.actions.act_window,name:tamam_hospital.action_patients_appointments
+#: model:ir.actions.act_window,name:tamam_hospital.hospital_appointments_action
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__appointment_ids
+#: model:ir.ui.menu,name:tamam_hospital.appointments_tamam
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_appointments_form
+msgid "Appointments"
+msgstr "المواعيد"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.appointments_graph
+msgid "Appointments Graph"
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.wizard_forms_view
+msgid "Appointments Wizard"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_hospital_appointments
+msgid "Appointments for Patients"
+msgstr "مواعيد المرضى"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_doctors__state__approve
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_doctors_form_view
+msgid "Approve"
+msgstr "موافق"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_attachment_count
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_kanban
+msgid "Avatar"
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_appointments_tree
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_tree_views
+msgid "Average Of Ages"
+msgstr "متوسط العمر"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.report_patients_views
+msgid "Barcode"
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.dashboard_form_view
+msgid "Book Appointment"
+msgstr "حجز كتاب"
+
+#. module: tamam_hospital
+#: model:ir.actions.act_window,name:tamam_hospital.act_book_appointment
+msgid "Book Appointments"
+msgstr "حجز كتاب"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_config_settings__module_crm
+msgid "CRM"
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.wizard_forms_view
+msgid "Cancel"
+msgstr "قفل"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_appointments__state__cancel
+msgid "Cancelled"
+msgstr "قفل"
+
+#. module: tamam_hospital
+#: model:ir.module.category,description:tamam_hospital.module_categories_tamam
+msgid "Categories For Tamam Hospital"
+msgstr "اصناف مستشفى تمام"
+
+#. module: tamam_hospital
+#: model:ir.actions.server,name:tamam_hospital.test_patients_cron_ir_actions_server
+#: model:ir.cron,cron_name:tamam_hospital.test_patients_cron
+#: model:ir.cron,name:tamam_hospital.test_patients_cron
+msgid "Check Patients Status"
+msgstr "فحص حالة المريض"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_doctors__state__check
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_doctors_form_view
+msgid "Check Sample"
+msgstr "فحص العينه"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_partner__company_type
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_users__company_type
+msgid "Company Type"
+msgstr "نوع الشركة"
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: tamam_hospital
+#: model:ir.ui.menu,name:tamam_hospital.menu_tamam_configuration
+msgid "Configuration"
+msgstr "الاعدادات"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_appointments__state__confirm
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_appointments_form
+msgid "Confirm"
+msgstr "تاكيد"
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__name
+msgid "Contact Number"
+msgstr "رقم الاتصال"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.wizard_forms_view
+msgid "Create"
+msgstr "انشاء "
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_form_views
+msgid "Create Appointment"
+msgstr "انشاء موعد"
+
+#. module: tamam_hospital
+#: model:ir.actions.act_window,name:tamam_hospital.action_wizard_create_appointments
+#: model:ir.ui.menu,name:tamam_hospital.create_appointments_wizard_menu
+msgid "Create Appointments"
+msgstr "انشاء موعد"
+
+#. module: tamam_hospital
+#: model_terms:ir.actions.act_window,help:tamam_hospital.action_labs
+msgid "Create your First Lab !"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_appointments_wizard__create_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__create_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__create_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__create_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_labs__create_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_appointments_wizard__create_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__create_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__create_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__create_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_labs__create_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__partner_id
+msgid "Customer"
+msgstr "زبون"
+
+#. module: tamam_hospital
+#: model:ir.actions.act_window,name:tamam_hospital.hospital_dashboard
+#: model:ir.ui.menu,name:tamam_hospital.menu_dashboard
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.dashboard_form_view
+msgid "Dashboard"
+msgstr "لوحة"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__appointment_date
+msgid "Date Time"
+msgstr "تاريخ"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_config_settings__note
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.res_config_settings_view_forms
+msgid "Default Note"
+msgstr "الملاحظة"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_appointments_form
+msgid "Delete"
+msgstr "مسح"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.wizard_forms_view
+msgid "Delete Patient"
+msgstr "مسح"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__description_note
+msgid "Description Note"
+msgstr "وصف"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_appointments_wizard__display_name
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__display_name
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__display_name
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__display_name
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_labs__display_name
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__display_name
+#: model:ir.model.fields,field_description:tamam_hospital.field_report_tamam_hospital_report_patients_views__display_name
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_partner__display_name
+#: model:ir.model.fields,field_description:tamam_hospital.field_sale_order__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__doctor_id
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__doctor_id
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_doctors_form_view
+msgid "Doctor"
+msgstr "الطبيب"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_kanban
+msgid "Doctor :"
+msgstr "الطبيب"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__doctor_gender
+msgid "Doctor Gender"
+msgstr "جنس الطبيب"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_appointments_form
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_form_views
+msgid "Doctor Prescription"
+msgstr "وصفة الطبيب"
+
+#. module: tamam_hospital
+#: model:ir.actions.act_window,name:tamam_hospital.hospital_doctors_action
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__doctor_ids
+#: model:ir.ui.menu,name:tamam_hospital.doctors_tamam
+msgid "Doctors"
+msgstr "الطبيب"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_appointments__state__done
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_appointments_form
+msgid "Done"
+msgstr "تم"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_appointments__state__draft
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_doctors__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__email_id
+msgid "Email"
+msgstr "ايميل"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_kanban
+msgid "Email :"
+msgstr "ايميل"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__appointment_date_end
+msgid "End Date Time"
+msgstr "تاريخ الانتهاء"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_doctors__genders__fe_male
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_patients__doctor_gender__fe_male
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_patients__gender__fe_male
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_search_views
+msgid "Female"
+msgstr "انثى"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_follower_ids
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_follower_ids
+msgid "Followers"
+msgstr "متابعين"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_channel_ids
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "متابعين"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_partner_ids
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "متابعين"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__activity_type_icon
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__genders
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__gender
+msgid "Gender"
+msgstr "جنس"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.wizard_forms_view
+msgid "Get Data"
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_pages
+msgid "Hey Subscribe The Channel ..."
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_hospital_labs
+msgid "Hospital Laboratory"
+msgstr "معامل"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_appointments_wizard__id
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__id
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__id
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__id
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_labs__id
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__id
+#: model:ir.model.fields,field_description:tamam_hospital.field_report_tamam_hospital_report_patients_views__id
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_config_settings__id
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_partner__id
+#: model:ir.model.fields,field_description:tamam_hospital.field_sale_order__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__activity_exception_icon
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__activity_exception_icon
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__message_needaction
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__message_unread
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__message_needaction
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__message_has_error
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__message_has_sms_error
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__message_has_error
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__image
+msgid "Image"
+msgstr "الصورة"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_is_follower
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.ui.menu,name:tamam_hospital.hospital_labs
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.labs_form
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.labs_tree
+msgid "Lab"
+msgstr "معمل"
+
+#. module: tamam_hospital
+#: model:ir.actions.act_window,name:tamam_hospital.action_labs
+msgid "Labs"
+msgstr "معامل"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_appointments_wizard____last_update
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments____last_update
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines____last_update
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors____last_update
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_labs____last_update
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients____last_update
+#: model:ir.model.fields,field_description:tamam_hospital.field_report_tamam_hospital_report_patients_views____last_update
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_partner____last_update
+#: model:ir.model.fields,field_description:tamam_hospital.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_appointments_wizard__write_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__write_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__write_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__write_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_labs__write_uid
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_appointments_wizard__write_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__write_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__write_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__write_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_labs__write_date
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_main_attachment_id
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_patients__age_group__major
+msgid "Major"
+msgstr "كبير"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_doctors__genders__male
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_patients__doctor_gender__male
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_patients__gender__male
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_search_views
+msgid "Male"
+msgstr "ذكر"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__product_id
+msgid "Medicine"
+msgstr "دواء"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_res_config_settings__product_ids
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.res_config_settings_view_forms
+msgid "Medicines"
+msgstr "الدواء"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_has_error
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_ids
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_ids
+msgid "Messages"
+msgstr "الرساله"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_patients__age_group__minor
+msgid "Minor"
+msgstr "صغير"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__name
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_labs__name
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_pages
+msgid "Name"
+msgstr "اسم"
+
+#. module: tamam_hospital
+#: code:addons/tamam_hospital/model/patient.py:0
+#: code:addons/tamam_hospital/model/patient.py:0
+#: code:addons/tamam_hospital/model/patient.py:0
+#: code:addons/tamam_hospital/model/patient.py:0
+#: code:addons/tamam_hospital/model/patient.py:0
+#: code:addons/tamam_hospital/model/patient.py:0
+#: code:addons/tamam_hospital/model/patient.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__activity_date_deadline
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__activity_summary
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__activity_type_id
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_appointments_form
+msgid "Notify"
+msgstr "تنبيه"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_needaction_counter
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_has_error_counter
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__message_needaction_counter
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__message_has_error_counter
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__message_unread_counter
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__user_id
+msgid "PRO"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__patient_id
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_form_views
+msgid "Patient"
+msgstr "مريض"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__patient_age
+msgid "Patient Age"
+msgstr "العمر"
+
+#. module: tamam_hospital
+#: model:ir.actions.act_window,name:tamam_hospital.act_patient_appointments
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.dashboard_form_view
+msgid "Patient Appointments"
+msgstr "موعد"
+
+#. module: tamam_hospital
+#: model:mail.template,subject:tamam_hospital.patients_cards_email_template
+msgid "Patient Card (Ref ${object.name_seq})"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.actions.report,name:tamam_hospital.report_patients_view_card
+msgid "Patient Card Report"
+msgstr "طباعة بطاقة المريض"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__name_seq
+msgid "Patient IDs"
+msgstr "معرف المريض"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__patient_name
+msgid "Patient Name"
+msgstr "ملاحظة"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__patient_name_upper
+msgid "Patient Name Upper"
+msgstr "الاسم"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.dashboard_form_view
+msgid "Patient Records"
+msgstr "سجل المريض"
+
+#. module: tamam_hospital
+#: model:ir.actions.act_window,name:tamam_hospital.act_patient_list
+#: model:ir.actions.act_window,name:tamam_hospital.patients_actions
+#: model:ir.ui.menu,name:tamam_hospital.patients_tamam
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_form_views
+msgid "Patients"
+msgstr "المرضى"
+
+#. module: tamam_hospital
+#: model:mail.template,report_name:tamam_hospital.patients_cards_email_template
+msgid "Patients Card_${(object.name_seq)}"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_appointments_wizard__patient_id
+msgid "Patients Name"
+msgstr "اسم"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_sale_order__names
+msgid "Patients Names"
+msgstr "اسم"
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_hospital_patients
+msgid "Patients Record"
+msgstr "سجل المريض"
+
+#. module: tamam_hospital
+#: code:addons/tamam_hospital/model/patient.py:0
+#, python-format
+msgid "Patients Server Action"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.actions.server,name:tamam_hospital.hospital_patients_action
+msgid "Patients Server Actions"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_report_tamam_hospital_report_patients_views
+msgid "Patients card Report"
+msgstr "طباعة بطاقة المريض"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_appointments_form
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_form_views
+msgid "Pharmacy"
+msgstr "الصيدليه"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__pharmacy_note
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__pharmacy_note
+msgid "Pharmacy Note"
+msgstr "الصيدلي"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__res_partner__company_type__plus
+msgid "Plus"
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_appointments_form
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_form_views
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.wizard_forms_view
+msgid "Print"
+msgstr "طباعه"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__product_qty
+msgid "Quantity"
+msgstr "عدد"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__notes
+msgid "Registration Notes"
+msgstr "ملاحظات"
+
+#. module: tamam_hospital
+#: model:ir.model.fields.selection,name:tamam_hospital.selection__hospital_doctors__state__reject
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.hospital_doctors_form_view
+msgid "Reject"
+msgstr "رفض"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__user_id
+msgid "Related User"
+msgstr "مستخدم"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_labs__user_id
+msgid "Responsible"
+msgstr "المسؤول"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__activity_user_id
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__activity_user_id
+msgid "Responsible User"
+msgstr "المسؤول"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_has_sms_error
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__order_id
+msgid "Sale Order"
+msgstr "طلب بيع"
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_search_views
+msgid "Search Patients"
+msgstr "بحث"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_form_views
+msgid "Send By Email"
+msgstr "ارسال باللايميل"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments_lines__sequence
+msgid "Sequence"
+msgstr "تسلسل"
+
+#. module: tamam_hospital
+#: model:ir.ui.menu,name:tamam_hospital.hospital_patients_server_action_menu
+msgid "Server Action"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.ui.menu,name:tamam_hospital.menu_hospital_settings
+msgid "Settings"
+msgstr "اعدادات"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_doctors__state
+msgid "State"
+msgstr "الحاله"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__state
+msgid "Status"
+msgstr "الحالات"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__activity_state
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.res_config_settings_view_forms
+msgid "Tamam"
+msgstr "تمام"
+
+#. module: tamam_hospital
+#: model:ir.ui.menu,name:tamam_hospital.main_tamam_hospital
+#: model:ir.ui.menu,name:tamam_hospital.tamam_hospital
+msgid "Tamam Hospital"
+msgstr "مستشفى تمام"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.res_config_settings_view_forms
+msgid "Tamam Hospital CRM"
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.res_config_settings_view_forms
+msgid "Tamam Hospital Management"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:res.groups,name:tamam_hospital.group_doctors_hospital
+msgid "Tamam Hospitals / Doctors "
+msgstr ""
+
+#. module: tamam_hospital
+#: model:res.groups,name:tamam_hospital.group_tamam_lab
+msgid "Tamam Hospitals / Lab Assistants "
+msgstr ""
+
+#. module: tamam_hospital
+#: model:res.groups,name:tamam_hospital.group_tamam_lab_mangers
+msgid "Tamam Hospitals / Lab Manger "
+msgstr ""
+
+#. module: tamam_hospital
+#: model:res.groups,name:tamam_hospital.group_mangers_hospital
+msgid "Tamam Hospitals / Mangers "
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.module.category,name:tamam_hospital.module_categories_tamam
+msgid "Tamam Managements"
+msgstr "ادارة"
+
+#. module: tamam_hospital
+#: model:ir.actions.act_window,name:tamam_hospital.action_tamam_config_settings
+msgid "Tamam Settings"
+msgstr "اعدادات"
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_form_views
+msgid "Test"
+msgstr "اختبار"
+
+#. module: tamam_hospital
+#: code:addons/tamam_hospital/model/patient.py:0
+#, python-format
+msgid "The Age Must be Greater Than 5..!"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__amount
+msgid "Total Amount"
+msgstr "المجموع الكلي"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__activity_exception_decoration
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_unread
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__message_unread_counter
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_appointments__website_message_ids
+#: model:ir.model.fields,field_description:tamam_hospital.field_hospital_patients__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_appointments__website_message_ids
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_appointments_wizard
+msgid "Wizard: Quick Registration of Appointments "
+msgstr ""
+
+#. module: tamam_hospital
+#: model_terms:ir.ui.view,arch_db:tamam_hospital.patients_form_views
+msgid "confirm"
+msgstr "تاكيد"
+
+#. module: tamam_hospital
+#: model:ir.model.fields,help:tamam_hospital.field_hospital_patients__patient_name_upper
+msgid "for capitalize letters"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_hospital_appointments_lines
+msgid "hospital.appointments.lines"
+msgstr ""
+
+#. module: tamam_hospital
+#: model:ir.model,name:tamam_hospital.model_hospital_doctors
+msgid "hospital.doctors"
+msgstr ""

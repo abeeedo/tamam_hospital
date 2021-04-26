@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="wizard_forms_view">
+        <field name="name">Create Wizard View</field>
+        <field name="model">appointments.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Appointments Wizard">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="patient_id"/>
+                        </group>
+                        <group>
+                            <field name="appointment_date"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button name="print_reports" string="Print" type="object" class="btn-primary"/>
+                    <button name="create_appointment" string="Create" type="object" class="btn-primary"/>
+                    <button name="get_data" string="Get Data" type="object" class="btn-primary"/>
+                    <button name="delete_patient" string="Delete Patient" type="object" class="btn-primary"/>
+                    <button class="btn-secondary" string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_appointments_wizard" model="ir.actions.act_window">
+        <field name="name">Create Appointments</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">appointments.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_forms_view"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="create_appointments_wizard" name="Create Appointments" parent="main_tamam_hospital"
+              action="action_appointments_wizard" sequence="50"/>
+
+</odoo>

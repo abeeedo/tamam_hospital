@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hospital_doctors_form_view" model="ir.ui.view">
+        <field name="name">hospital.doctors.form</field>
+        <field name="model">hospital.doctors</field>
+        <field name="arch" type="xml">
+            <form string="Doctor">
+                <header>
+                    <button name="button_check_sample" states="draft" string="Check Sample" type="object" class="btn-primary"/>
+                    <button name="button_approve" states="check" string="Approve" type="object" class="btn-primary"/>
+                    <button name="button_reject" states="check" string="Reject" type="object" class="btn-primary"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,check,approve,reject"/>
+                </header>
+                <sheet>
+                    <group>
+
+                        <group>
+                            <field name="name"/>
+                            <field name="appointment_ids" widget="many2many_tags"/>
+                        </group>
+
+                        <group>
+                            <field name="genders"/>
+                            <field name="user_id"/>
+                        </group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hospital_doctors_tree_view" model="ir.ui.view">
+        <field name="name">hospital.doctors.tree</field>
+        <field name="model">hospital.doctors</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+                <field name="genders"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hospital_doctors_action" model="ir.actions.act_window">
+        <field name="name">Doctors</field>
+        <field name="res_model">hospital.doctors</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="doctors_tamam" name="Doctors" parent="tamam_hospital" action="hospital_doctors_action" sequence="2"/>
+
+</odoo>

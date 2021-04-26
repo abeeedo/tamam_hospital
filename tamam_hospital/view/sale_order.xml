@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <record id="view_partner_forms_inherit" model="ir.ui.view">
+            <field name="name">res.partners.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="mobile" position="attributes">
+                    <attribute name="required">1</attribute>
+                </field>
+                <field name="email" position="attributes">
+                    <attribute name="readonly">1</attribute>
+                </field>
+<!--                <field name="website" position="attributes">-->
+<!--                    <attribute name="attrs">{'required': [('customer', '=', True)]}</attribute>-->
+<!--                </field>-->
+            </field>
+    </record>
+
+
+<!--    <record id="sale.action_orders" model="ir.actions.act_window">-->
+<!--        <field name="name">Inherit Sale Orders</field>-->
+<!--    </record>-->
+
+<!--    <record id="sale.menu_sale_quotations" model="ir.ui.view">-->
+<!--        <field name="name">New Quotations</field>-->
+<!--    </record>-->
+
+
+<!--        &lt;!&ndash;First method suggested&ndash;&gt;-->
+<!--    <record id="sale.menu_sale_quotations" model="ir.ui.menu">-->
+<!--        <field name="name">New Quotation</field>-->
+<!--        <field name="sequence">100</field>-->
+<!--    </record>-->
+
+<!--    &lt;!&ndash;second method&ndash;&gt;-->
+<!--    <menuitem id="sale.menu_sale_order"-->
+<!--            name="New Orders"-->
+<!--            action="sale.action_orders"-->
+<!--            parent="sale.sale_order_menu"-->
+<!--            sequence="2" groups="sales_team.group_sale_salesman"/>-->
+
+</odoo>
